@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+    <img class="logo" src="imagenes/logo-libro.png" alt="Logo de un libro">
+
+    <h1>MI FUTURA FACULTAD</h1>
+    <p>Facultad de Derecho de la UBA</p>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="carrera.html">La carrera</a>
+        <a href="motivos.html">Mis motivos</a>
+        <a href="formulario.html">Formulario</a>
+    </nav>
+</header>
+
+    <main>
+
+        <h2>Formulario de interés</h2>
+
+        <p>
+            Completá el siguiente formulario para contar qué te interesa
+            de la Facultad de Derecho y de la carrera de Abogacía.
+        </p>
+
+        <form action="#" method="POST">
+
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <div>
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre"
+                    placeholder="Ej: Juan Pérez" required>
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email"
+                    placeholder="Ej: juan@correo.com" required>
+                </div>
+
+                <div>
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono"
+                    placeholder="Ej: 11 1234-5678">
+                </div>
+
+                <div>
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información sobre la carrera</legend>
+
+                <div>
+                    <label for="carrera">Carrera que te interesa</label>
+
+                    <select id="carrera" name="carrera">
+                        <option value="">Seleccioná una opción...</option>
+                        <option value="abogacia">Abogacía</option>
+                        <option value="otra">Otra carrera</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>¿Por qué te interesa?</label>
+
+                    <div>
+                        <label>
+                            <input type="radio" name="motivo" value="interes">
+                            Me interesa el derecho
+                        </label>
+
+                        <label>
+                            <input type="radio" name="motivo" value="futuro">
+                            Me interesa como profesión
+                        </label>
+
+                        <label>
+                            <input type="radio" name="motivo" value="aprender">
+                            Quiero aprender sobre las leyes
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="comentarios">¿Qué esperás de la facultad?</label>
+
+                    <textarea id="comentarios" name="comentarios"
+                    rows="5"
+                    placeholder="Escribí tu respuesta..."></textarea>
+                </div>
+            </fieldset>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="informacion" required>
+                    Quiero recibir más información sobre la facultad *
+                </label>
+            </div>
+
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar formulario</button>
+            </div>
+
+        </form>
+
+        <a href="index.html">Volver al inicio</a>
+
+    </main>
+
+   <footer>
+        <p>Mi futura facultad - Tiziana Perez</p>
+        <p>Contacto: (011) 4809-5600</p>
+        <p>Facultad de Derecho UBA</p>
+    </footer>
+
+
+</body>
+</html>
