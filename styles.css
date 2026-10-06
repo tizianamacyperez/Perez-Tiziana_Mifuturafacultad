@@ -155,3 +155,20 @@ button {
 button:hover {
     background: #c73535;
 }
+
+.btn { display: inline-block;
+    background-color: #ce2c2c;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #ff8383;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
